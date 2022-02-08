@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepoPoublic</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Spartan:wght@300;400;500;700;800&display=swap');
+
+
+        *,
+        *::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            position: relative;
+            width: 40%;
+            height: 100vh;
+            background: #201B2D;
+            color: #fff;
+            font-family: "Spartan";
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .h1 {
+            margin-left: 20px;
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .left-text {
+            margin-left: 45px;
+            position: relative;
+            max-width: 40ch;
+        }
+
+        .left-text::after {
+            content: '';
+            position: absolute;
+            height: 95%;
+            width: 10px;
+            background-color: #fff;
+            top: 0;
+            left: -20px;
+        }
+
+        .left-text-span {
+            opacity: 0.7;
+            font-size: 1rem;
+        }
+
+        .text-left-bas {
+            margin-left: 20px;
+            font-size: 12px;
+        }
+
+        .right {
+            position: relative;
+            width: 60%;
+            height: 100vh;
+            background-image: url(img/nasa-image.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        @media screen and (max-width:1020px) {
+            section {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            .container {
+                display: flex;
+                position: relative;
+                width: 100vw;
+                height: 50%;
+                background: #201B2D;
+                color: #fff;
+                font-family: "Spartan";
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .right {
+                position: relative;
+                width: 100vw;
+                height: 50%;
+                background-image: url(img/nasa-image.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <p class="logo">space.git</p>
+            <div class="left">
+                <h1 class="h1">Space is huge and beautiful</h1>
+                <div class="left-text">
+                    <p class="left-text-p">
+                        If you get asteroids about a kilometer in size, those are large enough and carry enough energy
+                        into our system to disrupt transportation, communication, the food chains, and that can be a
+                        really bad day on Earth.
+                    </p>
+                    <span class="left-text-span">Neil deGrasse Tyson</span>
+                </div>
+
+            </div>
+            <div class="text-left-bas">
+                <span>Photo by @nasa on Unsplash</span>
+                <p>Jules Mesnil</p>
+            </div>
+        </div>
+        <div class="right">
+
+        </div>
+    </section>
+</body>
+
+</html>
